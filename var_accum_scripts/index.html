@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>var_accum_scripts</title>
+  <title>var_accum_scripts | NTS Modular Toolkit Hub</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body { font-family: sans-serif; background: #fdfdfd; color: #222; margin: 0; padding: 0; }
@@ -14,6 +14,25 @@
     a { color: #0066cc; text-decoration: none; }
     a:hover { text-decoration: underline; }
     code { background: #eee; padding: 0.2em 0.4em; border-radius: 4px; }
+    /* Techy back button style */
+    .back-button {
+      display: inline-block;
+      margin-bottom: 1em;
+      padding: 0.5em 1em;
+      background: linear-gradient(90deg, #0ff, #06f);
+      color: #111;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      box-shadow: 0 0 10px #0ff, 0 0 20px #06f inset;
+      transition: all 0.3s ease;
+    }
+    .back-button:hover {
+      background: linear-gradient(90deg, #06f, #0ff);
+      box-shadow: 0 0 20px #0ff, 0 0 30px #06f inset;
+      transform: scale(1.05);
+    }
   </style>
 </head>
 <body>
@@ -23,9 +42,13 @@
   </header>
 
   <main>
+    <!-- Back Button -->
+    <a href="/index.html" class="back-button">&laquo; Back to Hub</a>
+
     <section>
       <h2>Committed Files</h2>
       <ul>
+        <li><a href="https://raw.githubusercontent.com/MiniLini/var_accum_scripts/refs/heads/main/README.md" target="_blank">README.md</a></li> 
         <li><a href="https://raw.githubusercontent.com/MiniLini/var_accum_scripts/refs/heads/main/ADSearch.ps1" target="_blank">ADSearch.ps1</a></li>
         <li><a href="https://raw.githubusercontent.com/MiniLini/var_accum_scripts/refs/heads/main/backup-automation.ps1" target="_blank">backup-automation.ps1</a></li>
         <li><a href="https://raw.githubusercontent.com/MiniLini/var_accum_scripts/refs/heads/main/block_evil_IP.sh" target="_blank">block_evil_IP.sh</a></li>
@@ -39,11 +62,11 @@
         <li><a href="https://raw.githubusercontent.com/MiniLini/var_accum_scripts/refs/heads/main/ghostping.sh" target="_blank">ghostping.sh</a></li>
         <li><a href="https://raw.githubusercontent.com/MiniLini/var_accum_scripts/refs/heads/main/log-audit_port-probe.ps1" target="_blank">log-audit_port-probe.ps1</a></li>
         <li><a href="https://raw.githubusercontent.com/MiniLini/var_accum_scripts/refs/heads/main/logon_events_script-template.ps1" target="_blank">logon_events_script-template.ps1</a></li>
-        <li><a href="https://raw.githubusercontent.com/MiniLini/var_accum_scripts/refs/heads/main/README.md" target="_blank">README.md</a></li>
         <li><a href="https://raw.githubusercontent.com/MiniLini/var_accum_scripts/refs/heads/main/recon-toolkit.sh" target="_blank">recon-toolkit.sh</a></li>
         <li><a href="https://raw.githubusercontent.com/MiniLini/var_accum_scripts/refs/heads/main/strip_4_liveHost" target="_blank">strip_4_liveHost</a></li>
       </ul>
     </section>
+
     <section id="contact">
       <h2>Contact</h2>
       <p>
