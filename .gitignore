@@ -1,10 +1,89 @@
-# Wordpress - ignore core, configuration, examples, uploads and logs.
-# https://github.com/github/gitignore/blob/main/WordPress.gitignore
+#---------------------------------------------------
+# 🖥️ OS Junk
+.DS_Store
+Thumbs.db
 
-# Core
-#
-# Note: if you want to stage/commit WP core files
-# you can delete this whole section/until Configuration.
+#---------------------------------------------------
+# 🧠 Editor Configs
+.vscode/
+.idea/
+*.swp
+*.code-workspace
+
+#---------------------------------------------------
+# 📦 Node / Bundlers
+node_modules/
+dist/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+#---------------------------------------------------
+# 📜 Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock
+
+#---------------------------------------------------
+# 🐍 Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+
+#---------------------------------------------------
+# 🔐 Secrets & Credentials
+.env
+.env.*
+*.secret
+*.token
+*.credentials
+*.config
+id_rsa
+id_ed25519
+*.pem
+*.key
+*.crt
+*.pfx
+*.cer
+*.der
+*.csr
+
+#---------------------------------------------------
+# 🗄️ Databases & Backups
+*.sql
+*.dump
+*.bak
+*.backup
+*.sqlite
+*.sqlite3
+
+#---------------------------------------------------
+# 📊 Coverage / Cache
+coverage/
+.nyc_output/
+.cache/
+
+#---------------------------------------------------
+# 🛡️ Security Policies / Audits
+*.audit
+*.policy
+security/
+
+#---------------------------------------------------
+# 📦 Misc Build Artifacts
+*.tgz
+*.zip
+*.tar.gz
+*.tmp
+
+#---------------------------------------------------
+# 🌐 WordPress Core
 /wp-admin/
 /wp-content/index.php
 /wp-content/languages
@@ -17,32 +96,34 @@
 /wp-*.php
 /xmlrpc.php
 
-# Configuration
+#---------------------------------------------------
+# ⚙️ WordPress Configuration
 wp-config.php
 
-# Example themes
+#---------------------------------------------------
+# 🎨 WordPress Example Themes
 /wp-content/themes/twenty*/
 
-# Example plugin
+#---------------------------------------------------
+# 🔌 WordPress Example Plugin
 /wp-content/plugins/hello.php
 
-# Uploads
+#---------------------------------------------------
+# 📂 WordPress Uploads
 /wp-content/uploads/
 
-# Log files
+#---------------------------------------------------
+# 📜 WordPress Log Files
 *.log
 
-# htaccess
+#---------------------------------------------------
+# 🔒 WordPress htaccess
 /.htaccess
 
-# All plugins
-#
-# Note: If you wish to whitelist plugins,
-# uncomment the next line
-#/wp-content/plugins
+#---------------------------------------------------
+# 🛑 WordPress All Plugins (uncomment to whitelist)
+/wp-content/plugins
 
-# All themes
-#
-# Note: If you wish to whitelist themes,
-# uncomment the next line
-#/wp-content/themes
+#---------------------------------------------------
+# 🛑 WordPress All Themes (uncomment to whitelist)
+/wp-content/themes
